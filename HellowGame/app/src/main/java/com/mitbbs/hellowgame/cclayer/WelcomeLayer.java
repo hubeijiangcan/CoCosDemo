@@ -1,8 +1,9 @@
-package com.mitbbs.hellowgame.domain;
+package com.mitbbs.hellowgame.cclayer;
 
 import android.os.AsyncTask;
 import android.view.MotionEvent;
 
+import com.mitbbs.hellowgame.base.BaseLayer;
 import com.mitbbs.hellowgame.util.Utils;
 
 import org.cocos2d.actions.base.CCAction;
@@ -14,12 +15,11 @@ import org.cocos2d.actions.interval.CCSequence;
 import org.cocos2d.nodes.CCSprite;
 import org.cocos2d.types.CGPoint;
 import org.cocos2d.types.CGRect;
-import org.cocos2d.types.util.CGPointUtil;
 
 /**
  * Created by jc on 2017/3/30.
  */
-public class WelcomeLayer extends BaseLayer{
+public class WelcomeLayer extends BaseLayer {
 
     private  CCSprite logo;
     private CCSprite welcome;

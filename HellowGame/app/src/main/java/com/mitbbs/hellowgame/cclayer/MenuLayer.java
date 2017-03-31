@@ -1,10 +1,8 @@
-package com.mitbbs.hellowgame.domain;
+package com.mitbbs.hellowgame.cclayer;
 
-import android.view.Menu;
-
+import com.mitbbs.hellowgame.base.BaseLayer;
 import com.mitbbs.hellowgame.util.Utils;
 
-import org.cocos2d.layers.CCLayer;
 import org.cocos2d.menus.CCMenu;
 import org.cocos2d.menus.CCMenuItemSprite;
 import org.cocos2d.nodes.CCSprite;
@@ -30,7 +28,7 @@ public class MenuLayer extends BaseLayer {
         menu.addChild(item);
         menu.setScale(0.5f);
         menu.setPosition(winSize.width / 2 - 25, winSize.height / 2 - 110);
-        menu.setRotation(4.5f);
+        menu.setRotation(4.5f);  //旋转
         this.addChild(menu);
     }
 

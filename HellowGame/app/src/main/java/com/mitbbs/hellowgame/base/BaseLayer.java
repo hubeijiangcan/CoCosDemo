@@ -1,4 +1,4 @@
-package com.mitbbs.hellowgame.domain;
+package com.mitbbs.hellowgame.base;
 
 import org.cocos2d.layers.CCLayer;
 import org.cocos2d.nodes.CCDirector;

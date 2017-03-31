@@ -3,7 +3,8 @@ package com.mitbbs.hellowgame;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.mitbbs.hellowgame.domain.WelcomeLayer;
+import com.mitbbs.hellowgame.cclayer.FightLayer;
+import com.mitbbs.hellowgame.cclayer.WelcomeLayer;
 
 import org.cocos2d.layers.CCScene;
 import org.cocos2d.nodes.CCDirector;
@@ -31,7 +32,8 @@ public class MainActivity extends AppCompatActivity {
 
         CCScene ccScene = CCScene.node();//创建一个场景对象
         //创建图层
-        WelcomeLayer layer = new WelcomeLayer();
+//        WelcomeLayer layer = new WelcomeLayer();
+        FightLayer layer = new FightLayer();
         //给场景添加图层
         ccScene.addChild(layer);
         director.runWithScene(ccScene); // 导演运行场景
