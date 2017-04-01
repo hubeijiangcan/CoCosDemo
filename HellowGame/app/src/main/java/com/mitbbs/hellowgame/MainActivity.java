@@ -2,6 +2,11 @@ package com.mitbbs.hellowgame;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutCompat;
+import android.widget.BaseAdapter;
+import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.ProgressBar;
 
 import com.mitbbs.hellowgame.cclayer.FightLayer;
 import com.mitbbs.hellowgame.cclayer.WelcomeLayer;
@@ -37,7 +42,8 @@ public class MainActivity extends AppCompatActivity {
         //给场景添加图层
         ccScene.addChild(layer);
         director.runWithScene(ccScene); // 导演运行场景
-
+        ListView listView = new ListView(this);
+        listView.addHeaderView(new LinearLayout(this));
     }
 
     @Override

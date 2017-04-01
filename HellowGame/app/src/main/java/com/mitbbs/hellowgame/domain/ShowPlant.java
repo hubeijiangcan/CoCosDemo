@@ -9,6 +9,7 @@ public class ShowPlant{
     String format = "image/fight/chose/choose_default%02d.png";
     private  CCSprite bgsprite;
     private  CCSprite showplant;
+    private final int id;
 
     public ShowPlant(int i) {
         //c初始化背景图片
@@ -22,6 +23,7 @@ public class ShowPlant{
         showplant = CCSprite.sprite(String.format(format, i));
         showplant.setAnchorPoint(0, 0);
         showplant.setPosition(bgsprite.getPosition());
+        id = i;
     }
 
     public CCSprite getBgsprite() {
@@ -38,5 +40,9 @@ public class ShowPlant{
 
     public void setShowplant(CCSprite showplant) {
         this.showplant = showplant;
+    }
+
+    public int getId() {
+        return id;
     }
 }

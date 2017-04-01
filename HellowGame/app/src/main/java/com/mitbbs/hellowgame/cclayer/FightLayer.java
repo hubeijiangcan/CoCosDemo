@@ -39,6 +39,7 @@ public class FightLayer extends BaseLayer {
     private CCSprite selectBox;
     private CCSprite btStart;
     private CCSprite startLabel;
+    public static int SELECT_BOX = 0x01;
 
     public FightLayer() {
         loadMap();
@@ -89,7 +90,7 @@ public class FightLayer extends BaseLayer {
         selectBox = CCSprite.sprite("image/fight/chose/fight_chose.png");
         selectBox.setAnchorPoint(0,1);
         selectBox.setPosition(0,winSize.height);
-        this.addChild(selectBox);
+        this.addChild(selectBox,0,SELECT_BOX);
     }
 
     /**

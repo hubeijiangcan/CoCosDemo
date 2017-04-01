@@ -1,5 +1,7 @@
 package com.mitbbs.hellowgame.base;
 
+import android.util.Log;
+
 import org.cocos2d.nodes.CCSprite;
 
 /**
@@ -26,6 +28,7 @@ public abstract class BaseSpirte extends CCSprite{
     public abstract void baseAction();
 
     public void destory(){
+        Log.e("test","destory");
         if (dieLisenter != null){
             dieLisenter.die();
         }
